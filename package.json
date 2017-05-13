@@ -1,16 +1,15 @@
 {
   "name": "voxel",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "beefy index.js:bundle.js --debug=false -- --fast"
   },
+  "repository": "",
   "author": "",
-  "license": "ISC",
+  "license": "BSD",
   "devDependencies": {
-    "browservefy": "0.0.10",
-    "voxel-engine": "^0.20.2",
     "voxel-player": "^0.1.0"
   }
 }
