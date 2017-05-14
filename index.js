@@ -1,32 +1,23 @@
 
 var urls = {
-  "blogpost": "http://baidu.com/", 
-  "crittercreator": "http://voxelbuilder.com",
-  "voxeljscom": "http://voxeljs.com/",
-  "copy": "https://github.com/search?l=JavaScript&q=minecraft&ref=cmdform&type=Repositories",
-  "modulearticle": "http://maxogden.com/bringing-minecraft-style-games-to-the-open-web.html",
-  "blockplot": "https://github.com/maxogden/blockplot",
-  "voxelcreator": "http://voxel-creator.jit.su/",
-  "three": "http://threejs.org/",
-  "npm": "https://npmjs.org/search?q=voxel",
-  "node": "https://github.com/maxogden/art-of-node#the-art-of-node",
-  "browserify": "http://browserify.org/",
-  "beefy": "http://didact.us/beefy",
-  "gifblocks": "http://gifblocks.com",
-  "drone": "http://shama.github.io/voxel-drone/",
-  "craft": "http://shama.github.io/craft/",
-  "skin": "http://maxogden.github.io/minecraft-skin/",
-  "archiveroom": "http://archiveroom.net/",
-  "nyc": "https://twitter.com/voxeljs/status/324253185868963840",
-  "floodfill": "http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&uid=22924"
+  "github": "https://github.com/zhongjidalao/", 
+  "zhihu": "https://www.zhihu.com/people/madandan/activities",
+  "twitter": "https://github.com/zhongjidalao",
+  "facebook": "https://www.zhihu.com/people/madandan/activities",
+  "github_blog": "https://twitter.com/zhongjidalao",
+  "voxel": "https://www.facebook.com/profile.php?id=100014584084827",
+  "voxelcreator": "https://github.com/zhongjidalao/blog",
+  "three": "http://voxeljs.com/"
 }
 
 var slides = Object.keys(urls)
 
 var game = require('voxel-hello-world')({
   texturePath: "./images/",
+  materials: [['grass', 'dirt', 'grass_dirt'], 'brick', 'dirt'].concat(slides),
+  materialFlatColor: false,
   playerSkin: "./images/player.png",
-  materials: ["yellow"].concat(slides),
+  // materials: ["yellow"].concat(slides),
   generateVoxelChunks: false,
   chunkDistance: 1
 })
